@@ -345,6 +345,14 @@ p {
     /* border-color: #f12600; */
 }
 
+.slide_world_tour{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* border-color: #f12600; */
+}
+
 .world_tour_left{
     display: flex;
     flex-direction: column;
@@ -412,3 +420,4 @@ p {
     height: auto;
     margin: 20px;
 }
+
