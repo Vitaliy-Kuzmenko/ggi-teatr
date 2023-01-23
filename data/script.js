@@ -1,6 +1,6 @@
-const imgSlide = document.querySelectorAll(".SlideImg"); //получил массив изображений
-let btnPlus = document.getElementById("btn_right"); // подключил кнопку вперёд
-let btnMinus = document.getElementById("btn_left"); // подключил кнопку назад
+const imgSlide = document.querySelectorAll(".slide_world_tour"); //получил массив изображений
+let btnPlus = document.getElementById("world_tour_btn_right"); // подключил кнопку вперёд
+let btnMinus = document.getElementById("world_tour_btn_left"); // подключил кнопку назад
 let arrLengthImg = imgSlide.length; // узнали длину массива и изображениями
 console.log(arrLengthImg);
 let startImg = 0; // начальная позиция слайда
@@ -23,7 +23,7 @@ const viewImg = () => {
     console.log(curentImg);
     if (startImg === i) {
       // устанавливаем для текущей позиции видимость изображения
-      curentImg.style.display = "block";
+      curentImg.style.display = "flex";
     } else {
       elem.style.display = "none"; // остальные изображения прячем
     }
@@ -33,7 +33,7 @@ const viewImg = () => {
 
 hideImg(); // вызвал функцию которая спрятала все изображения
 
-imgSlide[0].style.display = "block"; // устанавливаем показ первого слайда
+imgSlide[0].style.display = "flex"; // устанавливаем показ первого слайда
 
 btnPlus.onclick = () => { //кнопка вперёд
   if (startImg === arrLengthImg - 1) {
@@ -43,7 +43,7 @@ btnPlus.onclick = () => { //кнопка вперёд
 
     hideImg(); // вызываем функцию которая спрячет все изображения
 
-    imgSlide[0].style.display = "block"; // устанавливаем показ первого слайда
+    imgSlide[0].style.display = "flex"; // устанавливаем показ первого слайда
   } else {
     //проверяем если текущий слайд не равен длине массива
 
@@ -58,7 +58,7 @@ btnMinus.onclick = () => { //кнопка назад
 
     startImg = 0; // сбрасываем  счётчик положения на 0
 
-    imgSlide[0].style.display = "block"; // устанавливаем показ первого слайда
+    imgSlide[0].style.display = "flex"; // устанавливаем показ первого слайда
   } else {
     //проверяем если текущий слайд не равен длине массива
 
