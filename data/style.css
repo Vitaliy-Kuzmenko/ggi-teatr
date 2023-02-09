@@ -15,6 +15,7 @@ body {
     background-size: 100%;
 
 }
+
 ul {
     list-style: none;
     padding: 0px;
@@ -243,7 +244,7 @@ p {
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .o_teatre_content {
@@ -604,7 +605,7 @@ footer {
             position: relative;
             align-items: stretch;
             }
-          h3{
+        h3{
             font-size: 30px;
           }
         hr {
@@ -665,6 +666,16 @@ footer {
         .first_screen_info_right {
             margin-left: 0;
         }
+        .first_screen_info h1{
+            font-size: 20px;
+        }
+        .first_screen_info h2{
+            font-size: 30px;
+        }
+
+        .first_screen_info_left img{
+            width: 220px;
+        }
     
         .o_teatre_content{
             flex-direction: column ;
@@ -672,6 +683,9 @@ footer {
         .world_tour_content{
             flex-direction: column;
             }
+        .world_tour_left{
+            width: 90%;
+        }
         .slide_world_tour{
             flex-direction: column;
         }
@@ -679,18 +693,24 @@ footer {
             flex-direction: row;
             width: 100%;
         }
-        .afisha_right{
-            margin: 0 auto;
+        .o_teatre p{
+            margin: 0;
         }
+     
 
         .o_teatre_footer{
             flex-direction: column;
-            
         }
         .afisha_content{
             flex-direction: column;
             align-items: center;
             margin-top: 10px;
+        }
+        .afisha_left{
+            width: 90%;
+        }
+        .afisha_right{
+            margin: 0 auto;
         }
         .antrakt_conteiner img {
             max-width: 300px;
