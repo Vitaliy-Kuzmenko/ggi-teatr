@@ -607,12 +607,12 @@ footer {
             display: none;
         } 
         .nav_header{
-            position: absolute;
+            /* position: absolute; */
             width: 100%;
             max-height: 0px;
             overflow: hidden;
         }
-        .header_lang_mobile{
+        /* .header_lang_mobile{
             display: block;
             position: absolute;
             bottom: 89px;
@@ -621,7 +621,7 @@ footer {
             line-height: 48px;
             margin-top: 20px;
             transform: rotate(90deg);
-        }
+        } */
         .menu_desktop{
             display: none;
         }
@@ -629,6 +629,9 @@ footer {
             display: flex;
             flex-direction: column;
             background-color: #fff;
+            background-image: url(./img/site_img/img_bckGrnd.jpg);
+            background-repeat: repeat;
+            background-size: 100%;
 
         }
         .menu_mobile {
@@ -648,10 +651,14 @@ footer {
         .first_screen_conteiner{
             flex-direction: column;
         }
+        .first_screen{
+            margin: 0;
+        }
         .imgTop_first_screen img{
             width: 300px;
             height: 65px;
         }
+    
         .o_teatre_content{
             flex-direction: column ;
         }
@@ -733,7 +740,7 @@ footer {
             top: -5px;
         }
         .program {flex-direction: column;}
-        .header{padding-bottom: 86px;}
+        /* .header{padding-bottom: 86px;} */
         .header_info { flex-direction: column; align-items: flex-start; margin-left: 15px;}
         .header_lang{display: none;}
         .slide_header {display: none;}
