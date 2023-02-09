@@ -5,57 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./data/style.css">
+    <link rel="stylesheet" href="/school_teatr/data/style.css">
 </head>
 <body>
-    <a href="#"><img alt="" src="./data/img/site_img/home.png" style="position: fixed; bottom: 10px; right: 15px; width: 40px; height: 40px;" /></a>
+    <a href="#"><img alt="" src="/school_teatr/data/img/site_img/home.png" style="position: fixed; bottom: 10px; right: 15px; width: 40px; height: 40px;" /></a>
    <div class="conteiner">
-    <div class="first_screen">
-        <nav class="top_nav">
-            <img src="./data/img/site_img/teatr_logo.png" alt="">
-            <ul>       
-                <li><a href="#documents">Документы</a></li>         
-                <li><a href="#za_kulisami">За кулисами ТШС "Подсолнух"</a></li>
-                <li><a href="#o_teatre">Что ты знаешь о театре?</a></li>
-                <li><a href="#afiha">Афиша</a></li>
-                <li><a href="#repertuar">Наш репертуар</a></li>
-                <li><a href="#world_tour">Мировое турне по театрам</a></li>
-                <li><a class="backSite" href="https://gimn-intellect.do.am/">Вернутся на сайт гимназии</a></li>
+    <div class="header">
+        <input type="checkbox" class="chk_gamburger" id="chk_gamburger">
+        <label class="gamburger" for="chk_gamburger"><span class="line_gamburger"></span></label>
+        <nav class="nav_header">
+            <ul class="menu_desktop">
+               <li><a href="#o_teatre">Азбука театра</a></li>
+            <li><a href="#world_tour">Театр без границ</a></li>
+            <li><a href="#afiha">Афиша</a></li>
+            <li><a href="#repertuar">Наш репертуар</a></li>
+            <li><a href="#antrakt">Беседы в антракте</a></li>
+            <li><a href="#za_kulisami">Закулисье</a></li>
+            <li><a href="#documents">Документы</a></li> 
+            <li><a class="backSite" href="https://gimn-intellect.do.am/">Вернутся на сайт гимназии</a></li>
             </ul>
+            <hr />
+               <nav class="mobile">
+                    <ul class="menu_mobile">
+                        <li><a href="#o_teatre">Азбука театра</a></li>
+                        <li><a href="#world_tour">Театр без границ</a></li>
+                        <li><a href="#afiha">Афиша</a></li>
+                        <li><a href="#repertuar">Наш репертуар</a></li>
+                        <li><a href="#antrakt">Беседы в антракте</a></li>
+                        <li><a href="#za_kulisami">Закулисье</a></li>
+                        <li><a href="#documents">Документы</a></li> 
+                        <li><a class="backSite" href="https://gimn-intellect.do.am/">Вернутся на сайт гимназии</a></li>
+                    </ul>
+                </nav>
         </nav>
-        <div class="first_screen_info">
-            <h1>Школьная театральная студия</h1>
-            <h1>МБОУ г. Горловки "Гимназия "Интеллект"</h1>
-                <h2>"ПОДСОЛНУХ"</h2>
-                <audio class="audio_pleer" controls>
-                    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
-                    <source src="./audio/1.mp3" type="audio/mpeg">
-                  </audio>
-        </div>
-    </div>
+     
+    </div> 
+   
+    
 
     <div class="main_content">
-        
-        <section class="scill_box" id="za_kulisami">
-            <h3>За кулисами ТШС "Подсолнух"</h3>
-            <div class="slider_scill_box">
-                <div class="scill_box_inside">
-                    <img src="./content_img/scill_box_inside/scill_box_inside1.png" alt="">
-                    <div class="scill_box_inside-info" >asdasdasdadsa</div>
-                </div>
-                <div class="scill_box_inside">
-                    <img src="./content_img/scill_box_inside/scill_box_inside1.png" alt="">
-                    <div class="scill_box_inside-info" >asdasdasdadsa</div>
-                </div>
-                <div class="scill_box_inside">
-                    <img src="./content_img/scill_box_inside/scill_box_inside1.png" alt="">
-                    <div class="scill_box_inside-info" >asdasdasdadsa</div>
-                </div>
+
+        <!-- =================================================
+            первый экран
+        ================================================= -->
+
+        <div class="first_screen">
+            <div class="imgTop_first_screen">
+                <img src="/school_teatr/data/img/site_img/first_scr_img_top.png" alt="">
             </div>
-        </section>
-        
+       
+            <div class="first_screen_info">
+                <div class="first_screen_conteiner">
+                    <div class="first_screen_info_left">
+                        <img src="/school_teatr/data/img/site_img/teatr_logo.png" alt="">
+                    </div>
+                    <div class="first_screen_info_right">
+                        <h2>Школьная театральная студия</h2>
+                        <h1>МБОУ г. Горловки "Гимназия "Интеллект"</h1>
+                            <h3>"Подсолнух"</h3>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="imgTop_first_screen">
+                <img src="/school_teatr/data/img/site_img/first_scr_img_bottom.png" alt="">
+            </div>
+        </div>
+
+        <!-- =================================================
+            Азбука театра
+        ================================================= -->
         <section class="o_teatre" id="o_teatre">
-            <h3>Что ты знаешь о театре?</h3>
+            <h3>Азбука театра</h3>
             <div class="o_teatre_content">
                 <div class="o_teatre_content_left">
                     <p>
@@ -64,78 +85,104 @@
                         2. Родиной театра считается Древняя Греция.<br>
                         3. Символами театра считаются театральные маски. Две маски - комедии и трагедии - олицетворяют собой театр
                         вообще.<br>
-                        4. Также маски символизируют его древность, поскольку в древности все театрализованные действия происходили
-                        на площадях и аренах, и чтобы в последних рядах видели характер персонажей, слышали, о чем вообще идет речь,
-                        лицедеи стали применять яркие маски, выражающие различные эмоции, а вместо рта имели рупор, усиливающий
-                        звук.<br>
-                        5. У театра есть покровительницы - древнегреческие музы: муза трагедии Мельпомена и муза комедии Талия.<br>
-                        6. В греческом театре было лишь три актёра, причём каждый из них мог играть несколько ролей. Также у каждой
-                        постановки был спонсор, который составлял смету ровно на троих человек.<br>
+                        4. У театра есть покровительницы - древнегреческие музы: муза трагедии Мельпомена и муза комедии Талия.<br>
+                        5. В середине XVII века, русские послы, возвращаясь из-за границы, рассказывали о «театральных действах». 
+                        На Руси театра еще не было, только бродячие скоморохи и кукольники бродили по городам и давали свои представления.
+                        Царь Алексей Михайлович (отец Петра Великого) решил устроить театр в Москве. Первый спектакль состоялся 17 октября 1672 года. 
+                        В нем участвовало более 60 актеров. Актеры были иностранцы, и первые спектакли шли на немецком языке.
+                        Придворный театр просуществовал недолго: в 1676 г., после смерти царя, он распался.
+                        А первый публичный (доступный) театр появился в Москве при Петре в 1702 году.<br>                       
                     </p>
                 </div>
 
                 <div class="o_teatre_content_right">
                     <div class="o_teatre_right_top">
-                        <img src="./content_img/o_teatre/old_teatr.JPG" alt="">
+                        <img src="/school_teatr/content_img/o_teatre/old_teatr.JPG" alt="">
                     </div>
                     <div class="o_teatre_right_bottom">
-                        <img src="./content_img/o_teatre/new_teatr.jpg" alt="">
+                        <img src="/school_teatr/content_img/o_teatre/new_teatr.jpg" alt="">
                     </div>
                 </div>
             </div>
 
 
             <div class="o_teatre_footer">
-                <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                    Первый театр бы создан в 6 в до НЭ
+                <div class="point_info"><div class="point"></div>
+                Отправляясь в театр, позаботьтесь о своём гардеробе
                 </div>
-                <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                    Первый театр бы создан в 6 в до НЭ
+                <div class="point_info"><div class="point"></div>
+                По правилам этикета на спектакль нужно приходить заблаговременно
                 </div>
-                <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                    Первый театр бы создан в 6 в до НЭ
+                <div class="point_info"><div class="point"></div>
+                Занимайте свои места в зале не позже третьего звонка
                 </div>
-                <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                    Первый театр бы создан в 6 в до НЭ
+                <div class="point_info"><div class="point"></div>
+                В зрительный зал мужчина входит первым, он же показывает даме дорогу к месту
                 </div>
-                <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                    Первый театр бы создан в 6 в до НЭ
+                <div class="point_info"><div class="point"></div>
+                Помните, что занимать чужие места неприлично
                 </div>
-                <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                    Первый театр бы создан в 6 в до НЭ
+                <div class="point_info"><div class="point"></div>
+                Даже если вам кажется, что в зрительном зале стало душно, не используйте программку в качестве веера
                 </div>
-                <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                    Первый театр бы создан в 6 в до НЭ
+                <div class="point_info"><div class="point"></div>
+                Главное правило в театре — соблюдение полной тишины
                 </div>
-            </div>            
-        </section>
-        
-        <section class="afisha">
-            <h3 id="afiha">Афиша</h3>
-            <div class="afisha_content">
-                <div class="afisha_left">
-                    <p>
-                        Продолжительность: 3 часа 30 минут с 1 антрактом<br>
-    
-                        …Я проснулся после грустного сна. Мне снился родной город, снег, зима, гражданская война… Во сне прошла передо мною беззвучная вьюга, а затем появился старенький рояль и возле него люди, которых нет уже на свете…
-    
-                        Велик был год и страшен год по рождестве Христовом 1918, от начала же революции второй.
-                    </p>
-                    <audio class="audio_pleer" controls>
-                        <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
-                        <source src="./audio/1.mp3" type="audio/mpeg">
-                      </audio>
+                <div class="point_info"><div class="point"></div>
+                Уход из зала во время действия — явный показатель низкой культуры зрителя
                 </div>
-                <div class="afisha_right">
-                    <img src="./content_img/afisha/poster.jpeg" alt="">
-                </div>
-            </div>
+                <div class="point_info"><div class="point"></div>
+                По окончании спектакля сразу не бегите в гардероб.
+                Артисты выходят на поклон, поэтому дождитесь, когда закроется занавес.
+                </div>            
+            </div>                       
         </section>
 
+        <!-- =================================================
+            Театр без границ
+        ================================================= -->
         <section class="world_tour" id="world_tour">
-            <h3>Мировое турне по театрам</h3>
+            <h3>Театр без границ</h3>
             <div class="world_tour_content">
-                <div class="world_tour_btn_left" id="world_tour_btn_left">кнопка left</div>
+                <div class="world_tour_btn_left" id="world_tour_btn_left">
+                    <img src="/school_teatr/data/img/site_img/img_btn_left.png" alt="">
+                </div>
+
+                <!-- start Слайд мировое турне -->
+                <div class="slide_world_tour">
+                    <div class="world_tour_left">
+                        <h4>Радиотеатр</h4>
+                        <p>
+                            С развитием технологий многие направления человеческой деятельности и творчества
+                            уходят в прошлое и забываются. Популярность новых медиа часто вызывает постепенное
+                            отмирание старых — только затем, чтобы через несколько (десятков) лет этот цикл
+                            повторился.
+                            
+                            Долгие годы радиодрамы были важным домашним культурным развлечением. Бывает
+                            сложно представить, как жители целых улиц собирались вокруг одного-двух телевизоров,
+                            но до появления телевидения центром гостиной становился радиоприемник. Радио
+                            быстро начали использовать не только для передачи новостей: сначала его захватила
+                            реклама, а потом культура и образование.
+                            
+                            Радиоспектакль — театрализованное представление, осуществляемое только с помощью
+                            звуков и транслируемое по радио. Кажется, что это довольно своеобразное развлечение,
+                            но какое-то время радиоспекталями становилось почти всё, что существовало в
+                            культурном поле — пьесы и книги, комиксы и мюзиклы.
+                            
+                            Жанру радиодрам почти сто лет, и порядком шестидесяти из них
+                            он вроде бы остаётся в тени, оттеснённый новыми медиаформатами от
+                            телевидения до Твиттера. Тем не менее, радиодрама — важная часть нашей культуры и
+                            истории.
+                        </p>
+                    </div>
+                    <div class="world_tour_right">
+                        <img src="/school_teatr/content_img/world_tour/radio_teatr2.jpg" alt="">
+                        <img src="/school_teatr/content_img/world_tour/radio_teatr.jpg" alt="">
+                    </div>
+                </div>
+                <!-- end Слайд мировое турне -->
+
+                <!-- start Слайд мировое турне -->
                 <div class="slide_world_tour">
                     <div class="world_tour_left">
                         <h4>Опера Гарнье, Париж, Франция</h4>
@@ -148,7 +195,7 @@
                         </p>
                     </div>
                     <div class="world_tour_right">
-                        <img src="./content_img/world_tour/france.JPG" alt="">
+                        <img src="/school_teatr/content_img/world_tour/france.JPG" alt="">
                     </div>
                 </div>
                 <!-- end Слайд мировое турне -->
@@ -168,7 +215,7 @@
                         </p>
                     </div>
                     <div class="world_tour_right">
-                        <img src="./content_img/world_tour/russia.JPG" alt="">
+                        <img src="/school_teatr/content_img/world_tour/russia.JPG" alt="">
                     </div>
                 </div>
                 <!-- end Слайд мировое турне -->
@@ -186,7 +233,7 @@
                         </p>
                     </div>
                     <div class="world_tour_right">
-                        <img src="./content_img/world_tour/china.JPG" alt="">
+                        <img src="/school_teatr/content_img/world_tour/china.JPG" alt="">
                     </div>
                 </div>
                 <!-- end Слайд мировое турне -->
@@ -202,44 +249,151 @@
                         </p>
                     </div>
                     <div class="world_tour_right">
-                        <img src="./content_img/world_tour/sidney.JPG" alt="">
+                        <img src="/school_teatr/content_img/world_tour/sidney.JPG" alt="">
                     </div>
                 </div>
                 <!-- end Слайд мировое турне -->
 
-                <div class="world_tour_btn_right" id="world_tour_btn_right">кнопка right</div>
+                <div class="world_tour_btn_right" id="world_tour_btn_right">
+                    <img src="/school_teatr/data/img/site_img/img_btn_right.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <!-- =================================================
+            афиша
+        ================================================= -->
+
+        <section class="afisha">
+            <h3 id="afiha">Афиша</h3>
+
+            <div class="afisha_content">
+                <div class="afisha_left">
+                    <p>
+                         К 80-летию создания «Молодой гвардии», подпольной антифашистской организации комсомольцев города Краснодона. 
+                        В январе и феврале 2023 года мы будем вспоминать даты 80-летия гибели членов подпольной антифашистской организации комсомольцев «Молодая гвардия». 
+                        В записи аудио спектакля использованы музыкальные материалы рок-оратории луганских композитора Максима Дерского и писателя Юрия Зайцева «Молодая гвардия - черный январь 1943 года»
+                    </p>
+                    <audio class="audio_pleer" controls>
+                        <source src="/school_teatr/content_img/afisha/poster_molodGvard2.mp3" type="audio/mpeg">
+                      </audio>
+                </div>
+                <div class="afisha_right">
+                    <img src="/school_teatr/content_img/afisha/poster_molodGvard2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="afisha_content">
+                <div class="afisha_left">
+                    <p>
+                        Масленица – великий праздник на Руси. 
+                        Она возвещает об окончании зимы и начале весны. 
+                        Масленичная неделя у наших предков была переполнена праздничными делами.
+                        Каждый день имел свое определенное название, и за ним были прикреплены действия, а также определенные правила поведения.
+                        А ты готовишься к масленице? Не оставайся в стороне - окунись в атмосферу праздника и отличного настроения!
+                    </p>
+                    <audio class="audio_pleer" controls>
+                        <source src="/school_teatr/content_img/afisha/poster.mp3" type="audio/mpeg">
+                      </audio>
+                </div>
+                <div class="afisha_right">
+                    <img src="/school_teatr/content_img/afisha/poster.jpg" alt="">
+                </div>
             </div>
         </section>
 
+        <!-- =================================================
+            наш репертуар
+        ================================================= -->
+
+        <section class="repertuar" id="repertuar">
+            <h3>Наш репертуар</h3>
+            <div class="repertuar_conteiner">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hA8KSvINhvI" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- =================================================
+            Беседы в Антракте
+        ================================================= -->
+
+        <section class="antrakt" id="antrakt">
+            <h3>Беседы в антракте</h3>
+            <div class="antrakt_conteiner">
+                $CONTENT$
+            </div>
+        </section>
+
+        <!-- =================================================
+            закулисье
+        ================================================= -->
+
+        <section class="scill_box" id="za_kulisami">
+            <h3>Закулисье</h3>
+            <div class="slider_scill_box">
+                <div class="scill_box_inside">
+                    <img src="/school_teatr/content_img/scill_box_inside/scill_box_inside1.png" alt="">
+                    <div class="scill_box_inside-info" >reserved</div>
+                </div>
+                <div class="scill_box_inside">
+                    <img src="/school_teatr/content_img/scill_box_inside/scill_box_inside2.jpg" alt="">
+                    <div class="scill_box_inside-info" >reserved</div>
+                </div>
+                <div class="scill_box_inside">
+                    <img src="/school_teatr/content_img/scill_box_inside/scill_box_inside3.jpg" alt="">
+                    <div class="scill_box_inside-info" >reserved</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================
+            документы
+        ================================================= -->
+        
+        
         <section class="documents" id="documents">
             <h3>Документы</h3>
             <div class="content_documents">
-                <img src="./data/img/site_img/sertifikat.jpg" alt="">
+                <img src="/school_teatr/data/img/site_img/sertifikat.jpg" alt="">
                 <div class="documents_list">
-                    <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                       <a href="">Паспорт ШТС</a> 
+                    <div class="point_info"><div class="point"></div>
+                       <a href="https://cloud.mail.ru/public/NyqX/UFERWbgvS" target="_blank">Паспорт ШТС</a> 
                     </div>
-                    <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                       <a href="">Приказ о создании ШТС "Подсолнух"</a> 
+                    <div class="point_info"><div class="point"></div>
+                       <a href="https://cloud.mail.ru/public/gHcx/EZb8Bka17" target="_blank">Приказ о создании ШТС "Подсолнух"</a> 
                     </div>
-                    <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                       <a href="">Положение о ШТС</a> 
+                    <div class="point_info"><div class="point"></div>
+                       <a href="https://cloud.mail.ru/public/97re/uJYdqZ329" target="_blank">Положение о ШТС</a> 
                     </div>
-                    <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                        <a href="">План мероприятий на 2022-2023 учебный</a> 
+                    <div class="point_info"><div class="point"></div>
+                        <a href="https://cloud.mail.ru/public/vJF9/oMmtWE9de" target="_blank">План мероприятий на 2022-2023 учебный</a> 
                     </div>
-                    <div class="point_info"><img src="./data/img/site_img/img_listMarker.png" alt="">
-                       <a href="">Программа внеурочной деятельности школьной театральной студии «Подсолнух»</a>
+                    <div class="point_info"><div class="point"></div>
+                       <a href="https://cloud.mail.ru/public/2Bhe/2QsERXwNx" target="_blank">Программа внеурочной деятельности школьной театральной студии «Подсолнух»</a>
                     </div>
                 </div>
             </div>
         </section>
-        <footer>
-
-        </footer>
-
+ 
     </div>
+       
+            <footer>
+               <span>
+                © МБОУ г. Горловки "Гимназия "Интеллект"
+               </span> 
+               <span>
+                $POWERED_BY$
+               </span>
+              <span>
+                bitlers
+              </span> 
+                
+            </footer>
+
    </div>
-   <script src="./data/script.js"></script>
+   <script src="/school_teatr/data/script.js"></script>
 </body>
 </html>
