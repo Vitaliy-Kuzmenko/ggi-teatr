@@ -1,9 +1,19 @@
+@font-face {
+    font-family: Pompadur;
+    /* Гарнитура шрифта */
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/Pompadur.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
 body {
     background-color: #1C1B21;
-    color: #fff;
-    background-image: url(./img/12.jpg);
+    color: #000;
+    background-image: url(/school_teatr/data/img/site_img/img_bckGrnd.jpg);
     background-repeat: repeat;
     background-size: 100%;
+
 }
 
 ul {
@@ -13,101 +23,172 @@ ul {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(191 35 50);
 }
 
 h3 {
     font-size: 45px;
     line-height: 2em;
     margin: 0px;
+    font-family: Pompadur;
+    color: rgb(191 35 50);
 }
+
 
 p {
     margin: 0px;
     font-size: 20px;
     line-height: 30px;
 }
+
 .conteiner {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1920px;
-    min-width: 1020px;
-    width: 100%;
-    height: 5289px; /*временно*/
-}
-
-.main_content{
-    display: flex;
-    flex-direction: column;
-    max-width:1110px;
-    min-width: 1020px;
-    width: 100%;
-    height: 100%; /*временно*/
-    /* background-color: rgb(184, 162, 132); временно */
-}
-
-/*первый экран*/
-
-.first_screen{
+    min-width: 1200px;
     width: 100%;
     height: auto;
-    background-image: url(./img/095.png);
-    background-size: 100% 100%;
 }
 
-.top_nav{
+.main_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1110px;
+    min-width: 1020px;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*============================================*/
+/*первый экран*/
+
+.first_screen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 550px;
+    margin: 50px 0px;
+}
+
+
+.first_screen_conteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgTop_first_screen{
+ display: flex;
+ justify-content: center;
+ width: 100%;
+ height: auto;
+}
+
+.imgTop_first_screen img{
+    width: 760px;
+    height: 65px;
+}
+
+.first_screen_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    font-size: 25px;
+    line-height: 70px;
+}
+
+
+.first_screen_info h1 {
+    font-size: 25px;
+    line-height: 25px;
+    font-family: Pompadur;
+    color: #765208;   
+}
+
+.first_screen_info h2 {
+    font-size: 36px;
+    line-height: 25px;
+    font-family: Pompadur;
+    color: #765208;   
+
+}
+
+.first_screen_info h3 {
+    font-size: 50px;
+    line-height: 60px;
+    font-family: Pompadur;
+    font-weight: 900;
+    color:#6c4b07;   
+
+}
+
+
+
+.first_screen_info_left img {
+    width: 300px;
+    height: auto;
+}
+
+.first_screen_info_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.menu_desktop {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    width: 92%;
+    justify-content: space-around;
+    width: 100%;
     min-width: 920px;
     height: auto;
     margin: 0px auto;
-    /* background-color: aqua; временно */
+    font-size: 18px;
+    font-weight: bold;
 }
-.top_nav ul{
+
+.menu_desktop ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.top_nav li{
+
+.menu_desktop li {
     padding: 0px 30px;
 }
 
-.top_nav img {
+.menu_desktop img {
     width: 60px;
     height: 60px;
 }
 
-.first_screen_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1100px;
-    margin: 0px auto ;
-    font-size: 25px; 
-    line-height: 70px;
-}
-.first_screen_info h1{
-    margin: 40px 0px;
-    -webkit-text-stroke: 2px #0024ff;
-}
-.first_screen_info h2{
-    font-size: 15vh; /*процент от высоты экрана*/
-    color: #f12600;
-    -webkit-text-stroke: 2px #ff8700;
-}
+
+
 
 .audio_pleer {
     width: 80%;
     height: 20px;
 }
-/* конец первый экран*/
 
+/* конец первый экран*/
+/*============================================*/
+
+/*============================================*/
 /*за кулисами*/
-.scill_box{
+.scill_box {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -116,20 +197,15 @@ p {
     height: 400px;
     margin-top: 145px;
     text-align: center;
-    /* background-color: #ff8700; */
 }
-/* .scill_box span{
-    font-size: 45px;
-    line-height: 2em;
-} */
-.slider_scill_box{
+
+.slider_scill_box {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
     height: 300px;
-    /* background-color: #ff8700; */
 }
 
 .scill_box_inside {
@@ -138,18 +214,15 @@ p {
     height: 300px;
     border-radius: 10px;
 }
+
 .scill_box_inside img {
     max-width: 350px;
     max-height: 300px;
     border-radius: 50px 0px;
 }
-/* .scill_box_inside span{
-    width: 100%;
-    height: 90px;
-    background-color: rgb(187, 128, 232);
-} */
 
-.scill_box_inside-info{
+
+.scill_box_inside-info {
     position: absolute;
     bottom: 0px;
     background-color: #08355aa3;
@@ -157,8 +230,11 @@ p {
     height: 90px;
     border-radius: 50px 0px;
 }
-/* конец за кулисами*/
 
+/* конец за кулисами*/
+/*============================================*/
+
+/*============================================*/
 /*что ты знаешь о театре*/
 
 .o_teatre {
@@ -168,25 +244,22 @@ p {
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 145px;
     padding: 20px;
-    /* background-color: #ff8700; */
 }
-.o_teatre_content{
+
+.o_teatre_content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     height: auto;
-    /* background-color: #f12600; */
 }
 
-.o_teatre_content_left{
+.o_teatre_content_left {
     display: flex;
     align-items: center;
     width: 100%;
     height: auto;
-    /* background-color: aquamarine; */
 }
 
 .o_teatre p {
@@ -195,67 +268,76 @@ p {
     justify-content: space-around;
     border: 2px solid;
     border-radius: 60px 0px;
-    /* border-color: #f12600; */
+    border-color: #f12600;
     padding: 25px;
     margin-right: 40px;
 }
 
 
-.o_teatre_content_right{
+.o_teatre_content_right {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 450px;
     height: auto;
-    /* background-color: #4125cb ; */
 }
 
-.o_teatre_right_top{
+.o_teatre_right_top {
     width: 400px;
     height: auto;
     padding: 10px;
-    /* background-color: #ff8700; */
 }
-.o_teatre_right_top img{
+
+.o_teatre_right_top img {
     width: 100%;
     object-fit: contain;
 }
 
-.o_teatre_right_bottom{
+.o_teatre_right_bottom {
     width: 400px;
     height: auto;
     padding: 10px;
-    /* background-color: #05fd11; */
 }
-.o_teatre_right_bottom img{
+
+.o_teatre_right_bottom img {
     width: 100%;
     object-fit: contain
 }
 
-.o_teatre_footer{
+.o_teatre_footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
     height: auto;
     margin-top: 50px;
-    /* background-color: rgb(225, 255, 0); */
 }
 
-.o_teatre_footer img{
-    width: 20px;
-    height: auto;
-    margin: 20px;
-}
 
 .point_info {
     display: flex;
     align-items: center;
+    margin: 15px;
+}
+
+.point_info a{
+    color: #000;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: #bf2332;
+    border-radius: 7px 2px;
+    margin-right: 23px;
 }
 
 /* конец что ты знаешь о театре*/
+/*============================================*/
 
+/*============================================*/
 /* афиша*/
 .afisha {
     display: flex;
@@ -264,21 +346,21 @@ p {
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 145px;
+    margin-top: 30px;
     padding: 20px;
-    /* background-color: #f12600; */
 }
 
-.afisha_content{
+.afisha_content {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-top: 130px;
     border: 2px solid;
     border-radius: 60px 0px;
-    /* border-color: #f12600; */
+    border-color: #f12600;
 }
 
-.afisha_left{
+.afisha_left {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,23 +368,27 @@ p {
     height: auto;
     margin: 15px;
     padding: 15px;
-    /* background-color: aquamarine; */
 }
-.afisha_right{
+
+.afisha_right {
     width: auto;
     height: 100%;
     margin: -7% 0px;
 
 }
-.afisha_right img{
+
+.afisha_right img {
     width: 100%;
     height: 400px;
     object-fit: contain;
-    border-radius: 60px 0px;
+    border-radius: 35px 0px;
+    border-color: #f12600;
 }
 
 /*конец афиша*/
+/*============================================*/
 
+/*============================================*/
 /*Мировое турне по театрам*/
 
 .world_tour {
@@ -312,71 +398,76 @@ p {
     align-items: center;
     width: 100%;
     height: auto;
-    margin-top: 145px;
+    margin-top: 30px;
     padding: 20px;
-    /* background-color: #f12600; */
 }
 
-.world_tour_btn_right{
+.world_tour_btn_right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 70px;
     height: 80%;
-    background-color: #f12600;
 }
 
-.world_tour_btn_left{
+.world_tour_btn_left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 70px;
     height: 80%;
-    background-color: #f12600;
 }
 
-.world_tour_content{
+.world_tour_content {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     border: 2px solid;
     border-radius: 60px 0px;
-    /* border-color: #f12600; */
+    border-color: #f12600;
 }
 
-.slide_world_tour{
+.slide_world_tour {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    /* border-color: #f12600; */
+    border-color: #f12600;
 }
 
-.world_tour_left{
+.world_tour_left {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%;
     height: auto;
     margin: 20px;
-    /* background-color: aquamarine; */
 }
-.world_tour_right{
+
+.world_tour_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: auto;
     height: 100%;
     margin: 20px;
 }
-.world_tour_right img{
+
+.world_tour_right img {
     width: 100%;
     height: 400px;
     object-fit: contain;
     border-radius: 60px 0px;
+    border-color: #f12600;
 }
 
 /* конец Мировое турне по театрам*/
+/*============================================*/
 
-.documents{
+/*============================================*/
+/* Документы*/
+.documents {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -385,39 +476,259 @@ p {
     height: auto;
     margin-top: 145px;
     padding: 20px;
-    /* background-color: #f12600; */
 }
 
-.content_documents{
+.content_documents {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px;
     border: 2px solid;
     border-radius: 60px 0px;
-
+    border-color: #f12600;
 }
 
-.documents img{
+.documents img {
     display: block;
     width: 70%;
     height: auto;
-    
+
 }
 
-.documents_list{
+.documents_list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
     height: auto;
     margin-top: 50px;
-    /* background-color: rgb(225, 255, 0); */
 }
 
-.documents_list img{
+.documents_list img {
     width: 20px;
     height: auto;
     margin: 20px;
 }
 
+/* Конец документы*/
+/*============================================*/
+
+/*============================================*/
+/*Беседы в антракте*/
+.antrakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 145px;
+}
+
+.antrakt_conteiner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 1100px;
+    height: auto;
+    border: 2px solid;
+    border-radius: 60px 0px;
+    border-color: #f12600;
+}
+
+.antrakt_conteiner img {
+    max-width: 700px;
+    height: auto;
+}
+
+/*Конец Беседы в антракте*/
+/*============================================*/
+
+/*============================================*/
+/*Наш репертуар*/
+.repertuar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 145px;
+    
+}
+
+.repertuar_conteiner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 1100px;
+    height: auto;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 60px 0px;
+    border-color: #f12600;
+}
+
+.repertuar_conteiner img {
+    max-width: 700px;
+    height: auto;
+}
+
+/*Конец Наш репертуар*/
+/*============================================*/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* для мобильного*/
+
+.menu_mobile {
+    display: none;
+    }
+
+    .chk_gamburger {
+        display: none;
+        float: right;
+        width: 100px;
+        height: 50px;
+    }
+
+    @media (max-width:600px) {
+        .conteiner{
+            max-width: 600px;
+            min-width: 350px;
+            margin: 0px 30px 0px 30px;
+            position: relative;
+            align-items: stretch;
+            }
+          
+        hr {
+            display: none;
+        } 
+        .nav_header{
+            position: absolute;
+            width: 100%;
+            max-height: 0px;
+            overflow: hidden;
+        }
+        .header_lang_mobile{
+            display: block;
+            position: absolute;
+            bottom: 89px;
+            right: -28px;
+            font-size: 32px;
+            line-height: 48px;
+            margin-top: 20px;
+            transform: rotate(90deg);
+        }
+        .menu_desktop{
+            display: none;
+        }
+        .mobile {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+
+        }
+        .menu_mobile {
+            display: flex;
+            flex-direction: column;
+            padding: 66px 26px;
+            font-size: 34px;
+            line-height: 42px;
+            color: #828282;
+        }
+        .menu_mobile li {
+            padding-bottom: 68px ;
+        }
+        .main_content{
+            min-width: 350px;
+        }
+        .first_screen_conteiner{
+            flex-direction: column;
+        }
+        .o_teatre_content{
+            flex-direction: column ;
+        }
+        .world_tour_content{
+            flex-direction: column;
+            }
+        .slide_world_tour{
+            flex-direction: column;
+        }
+        .o_teatre_content_right{
+            flex-direction: row;
+            width: 100%;
+        }
+        .afisha_right{
+            margin: 0 auto;
+        }
+
+        .o_teatre_footer{
+            flex-direction: column;
+            
+        }
+        .afisha_content{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .slider_scill_box{
+            flex-direction: column;
+        }
+        .documents_list{
+            flex-direction: column;
+        }
+        .repertuar_conteiner{
+            width: 100%;
+        }
+
+        .chk_gamburger:checked ~ .nav_header {max-height: 100%;}
+        .chk_gamburger:checked ~ .gamburger .line_gamburger{background-color: transparent;}
+        .chk_gamburger:checked ~ .gamburger .line_gamburger::after{
+            transform:rotate(45deg);
+            top: 0;
+        }
+        .chk_gamburger:checked ~ .gamburger .line_gamburger::before{
+            transform: rotate(-45deg);
+            top: 0;
+        }
+       
+        .line_gamburger {
+            display: block;
+            z-index: 2;
+            top: 68px;
+            right: 10px;
+            float: right;
+            height: 3px;
+            position: relative;
+            width: 35px;
+            background-color: #000;
+        }
+        .line_gamburger::before,
+        .line_gamburger::after {
+            display: block;
+            background-color: #000;
+            content: '';
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%; 
+        }
+        .line_gamburger::before{
+            top: 5px;
+        }
+        .line_gamburger::after{
+            top: -5px;
+        }
+        .program {flex-direction: column;}
+        .header{padding-bottom: 86px;}
+        .header_info { flex-direction: column; align-items: flex-start; margin-left: 15px;}
+        .header_lang{display: none;}
+        .slide_header {display: none;}
+        .slide_header_mobile {display: flex; justify-content: center;}  
+        .header_info  {padding: 65px 0px}
+    }
+    
+ 
