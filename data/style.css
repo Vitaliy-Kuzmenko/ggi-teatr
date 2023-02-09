@@ -10,7 +10,7 @@
 body {
     background-color: #1C1B21;
     color: #000;
-    background-image: url(/data/img/site_img/img_bckGrnd.jpg);
+    background-image: url(./data/img/site_img/img_bckGrnd.jpg);
     background-repeat: repeat;
     background-size: 100%;
 
