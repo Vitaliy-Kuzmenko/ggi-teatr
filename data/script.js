@@ -1,7 +1,7 @@
-const imgSlide = document.querySelectorAll(".slide_world_tour"); //получил массив изображений
+const imgSlide = document.querySelectorAll(".slide_world_tour"); //получил массив блоков
 let btnPlus = document.getElementById("world_tour_btn_right"); // подключил кнопку вперёд
 let btnMinus = document.getElementById("world_tour_btn_left"); // подключил кнопку назад
-let arrLengthImg = imgSlide.length; // узнали длину массива и изображениями
+let arrLengthImg = imgSlide.length; // узнали длину массива с блоками
 console.log(arrLengthImg);
 let startImg = 0; // начальная позиция слайда
 
